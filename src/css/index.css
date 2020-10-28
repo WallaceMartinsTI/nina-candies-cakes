@@ -1,0 +1,177 @@
+.page-header {
+    background-color: var(--color-items-background);
+    border-radius: 1.2rem; 
+}
+
+.page-header .grid-superior,
+.page-header .grid-inferior {
+    margin: .5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-items {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.main-items .grid-bolos,
+.main-items .grid-paes-de-mel,
+.main-items .grid-bombons,
+.main-items .grid-muito-mais {
+    background-color: var(--color-items-background);
+    margin: 1.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    padding: 2rem;
+    border: solid .2rem #EA00D7;
+}
+
+.main-items .grid-bolos .link-bolos .texto-bolos,
+.main-items .grid-bolos .link-bolos .img-bolo,
+.main-items .grid-bombons .link-bombons .texto-bombons,
+.main-items .grid-bombons .link-bombons .img-bombons,
+.main-items .grid-muito-mais .link-muito-mais .texto-muito-mais,
+.main-items .grid-muito-mais .link-muito-mais .img-muito-mais {
+    margin-top: 1rem;
+}
+
+
+
+.contato-container .link-contato {
+    border: solid .2rem #EA00D7;
+}
+
+.main-items .grid-bolos .link-bolos,
+.main-items .grid-paes-de-mel .link-paes-de-mel,
+.main-items .grid-bombons .link-bombons,
+.main-items .grid-muito-mais .link-muito-mais,
+.contato-container .link-contato {
+    text-decoration: none;
+    color: var(--color-text)
+}
+
+.main-items .grid-bolos:active {
+    border: transparent;
+}
+.main-items .grid-paes-de-mel:active {
+    border: transparent;
+}
+.main-items .grid-bombons:active {
+    border: transparent;
+}
+.main-items .grid-muito-mais:active {
+    border: transparent;
+}
+
+.contato-container .link-contato:active {
+    border: transparent;
+}
+
+.contato-container {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.contato-container .link-contato {
+    background-color: var(--color-items-background);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 1.2rem;
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+}
+
+.contato-container .link-contato .texto-contato {
+    font-size: 2rem;
+}
+
+.contato-container .link-contato .img-insta,
+.contato-container .link-contato .img-whats {
+    border-radius: 2rem;
+}
+
+/* Até 220px - Ex: iPhone 4S (219x343) */
+@media(max-width: 220px) {
+    .main-items .grid-bolos,
+    .main-items .grid-paes-de-mel,
+    .main-items .grid-bombons,
+    .main-items .grid-muito-mais {
+        margin: .5rem;
+        padding: .75rem;
+    }
+}
+
+@media(min-width: 520px) {
+    .page-header {
+        padding: 3rem;
+    }
+}
+
+@media(min-width: 575px) {
+    .page-header .grid-superior,
+    .page-header .grid-inferior {
+        height: 12rem;
+    }
+    .page-header .grid-superior .texto1,
+    .page-header .grid-inferior .texto2 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+    .page-header .grid-superior .chapeu,
+    .page-header .grid-inferior .saboroso {
+        width: 8.5rem;
+        margin-bottom: 1rem;
+    }
+    .main-items .grid-bolos .link-bolos .texto-bolos,
+    .main-items .grid-paes-de-mel .link-paes-de-mel .texto-paes-de-mel,
+    .main-items .grid-bombons .link-bombons .texto-bombons,
+    .main-items .grid-muito-mais .link-muito-mais .texto-muito-mais {
+        font-size: 2.5rem;
+    }
+    .main-items .grid-bolos .link-bolos .img-bolo .img-dentro-bolo,
+    .main-items .grid-paes-de-mel .link-paes-de-mel .img-dentro-paes-de-mel,
+    .main-items .grid-bombons .link-bombons .img-dentro-bombons,
+    .main-items .grid-muito-mais .link-muito-mais .img-dentro-muito-mais {
+        width: 15rem;
+    }
+
+    
+    .contato-container .link-contato {
+        padding: 2rem;
+    }
+    
+    .contato-container .link-contato .texto-contato {
+        font-size: 3rem;
+    }
+    
+    .contato-container .link-contato .img-insta,
+    .contato-container .link-contato .img-whats {
+        width: 6rem;
+    }
+}
+
+@media(min-width: 575px) {
+    .page-header .grid-superior,
+    .page-header .grid-inferior {
+        height: 20rem;
+    }
+    .page-header .grid-superior .texto1,
+    .page-header .grid-inferior .texto2 {
+        font-size: 3.5rem;
+        margin-top: 2rem;
+    }
+    .page-header .grid-superior .chapeu,
+    .page-header .grid-inferior .saboroso {
+        width: 12rem;
+        margin-bottom: 1rem;
+    }
+}

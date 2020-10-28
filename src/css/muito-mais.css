@@ -1,0 +1,554 @@
+.header-items .navegacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        'botao-voltar pagina-inicial pagina-contato';
+    column-gap: 2rem;
+}
+
+.header-items .navegacao .img-voltar-container {
+    background-color: var(--color-items-background);
+    height: 2rem;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    grid-area: botao-voltar;
+}
+
+.header-items .navegacao .texto-inicio,
+.header-items .navegacao .texto-pg-contato {
+    background-color: var(--color-items-background);
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--color-text);
+    text-align: center;
+    padding-top: 1.2rem;
+    border-radius: 1.2rem;
+}
+
+.header-items .navegacao .texto-inicio,
+.header-items .navegacao .texto-pg-contato,
+.header-items .navegacao .img-voltar-container {
+    border: solid .2rem #EA00D7;
+}
+
+.header-items .navegacao .texto-inicio:active {
+    border: transparent;
+}
+
+.header-items .navegacao .texto-pg-contato:active {
+    border: transparent;
+}
+
+.header-items .navegacao .img-voltar-container:active {
+    border: transparent;
+}
+
+.header-items .navegacao .texto-inicio {
+    grid-area: pagina-inicial;
+}
+
+.header-items .navegacao .texto-pg-contato {
+    grid-area: pagina-contato;
+}
+
+.header-items .titulo-container {
+    background-color: var(--color-items-background);
+    display: block;
+    text-align: center;
+    border-radius: 1.2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 5rem 3rem 0rem 3rem;
+}
+
+.main-items .texto-copo-felicidade,
+.main-items .texto-festa-na-caixa,
+.main-items .texto-bolos-caseiros,
+.main-items .texto-especial-pascoa,
+.main-items .texto-especial-natal,
+.main-items .texto-outros {
+    background: var(--color-items-background);
+    margin-top: 5rem;
+    display: block;
+    width: 25rem;
+    margin-left: 1.5rem;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    text-align: center;
+}
+
+.main-items .div-copo-felicidade,
+.main-items .div-festa-na-caixa,
+.main-items .div-bolos-caseiros,
+.main-items .div-especial-pascoa,
+.main-items .div-especial-natal,
+.main-items .div-outros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 5rem;
+}
+
+.main-items .div-copo-felicidade .copo-felicidade01,
+.main-items .div-copo-felicidade .copo-felicidade02,
+.main-items .div-festa-na-caixa .festa-na-caixa01,
+.main-items .div-festa-na-caixa .festa-na-caixa02,
+.main-items .div-bolos-caseiros .bolo-caseiro01,
+.main-items .div-bolos-caseiros .bolo-caseiro02,
+.main-items .div-especial-pascoa .ovo-colher01,
+.main-items .div-especial-pascoa .ovo-colher02,
+.main-items .div-especial-pascoa .manete,
+.main-items .div-especial-pascoa .cones,
+.main-items .div-especial-pascoa .ovo-colher03,
+.main-items .div-especial-pascoa .ovo-colher04,
+.main-items .div-especial-pascoa .ovo-colher05,
+.main-items .div-especial-pascoa .ovo-colher06,
+.main-items .div-especial-natal .chocotone01,
+.main-items .div-especial-natal .chocotone02,
+.main-items .div-especial-natal .mini-panetone01,
+.main-items .div-especial-natal .mini-panetone02,
+.main-items .div-especial-natal .chocotone03,
+.main-items .div-especial-natal .chocotone04,
+.main-items .div-especial-natal .chocotone05,
+.main-items .div-especial-natal .chocotone06,
+.main-items .div-outros .bombons01,
+.main-items .div-outros .bombons02,
+.main-items .div-outros .chocotones,
+.main-items .div-outros .brigadeiros {
+    background-color: var(--color-items-background);
+    border-radius: 1.2rem;
+    padding: 1rem;
+    margin-left: .5rem;
+    width: 12rem;
+    height: 12rem;
+}
+
+.footer-items {
+    margin-top: 5rem;
+}
+
+.footer-items .footer-contato {
+    background-color: var(--color-items-background);
+    display: block;
+    margin: 0 5rem;
+    border-radius: 1.2rem;
+    padding: .5rem;
+}
+
+.footer-items .footer-contato .texto-info {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer-items .contato-inferior .link-contato-inferior {
+    background-color: var(--color-items-background);
+    margin: 1.5rem 5rem;
+    border-radius: 1.2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: .5rem;
+    color: var(--color-text);
+    border: solid .2rem #EA00D7;
+}
+
+.footer-items .contato-inferior .link-contato-inferior:active {
+    border: transparent;
+}
+
+/* Até 220px - Ex: iPhone 4S (219x343) */
+@media(max-width: 220px) {
+    .header-items .navegacao .img-voltar-container {
+        height: 1rem;
+        padding: 2rem .5rem;
+    }
+
+    .main-items .div-copo-felicidade,
+    .main-items .div-festa-na-caixa,
+    .main-items .div-bolos-caseiros,
+    .main-items .div-especial-pascoa,
+    .main-items .div-especial-natal,
+    .main-items .div-outros {
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    .main-items .texto-copo-felicidade,
+    .main-items .texto-festa-na-caixa,
+    .main-items .texto-bolos-caseiros,
+    .main-items .texto-especial-pascoa,
+    .main-items .texto-especial-natal,
+    .main-items .texto-outros {
+        width: 20rem;
+        margin-left: 1rem;
+        padding: 1rem;
+    }
+
+    .main-items .div-copo-felicidade .copo-felicidade01,
+    .main-items .div-copo-felicidade .copo-felicidade02,
+    .main-items .div-festa-na-caixa .festa-na-caixa01,
+    .main-items .div-festa-na-caixa .festa-na-caixa02,
+    .main-items .div-bolos-caseiros .bolo-caseiro01,
+    .main-items .div-bolos-caseiros .bolo-caseiro02,
+    .main-items .div-especial-pascoa .ovo-colher01,
+    .main-items .div-especial-pascoa .ovo-colher02,
+    .main-items .div-especial-pascoa .manete,
+    .main-items .div-especial-pascoa .cones,
+    .main-items .div-especial-pascoa .ovo-colher03,
+    .main-items .div-especial-pascoa .ovo-colher04,
+    .main-items .div-especial-pascoa .ovo-colher05,
+    .main-items .div-especial-pascoa .ovo-colher06,
+    .main-items .div-especial-natal .chocotone01,
+    .main-items .div-especial-natal .chocotone02,
+    .main-items .div-especial-natal .mini-panetone01,
+    .main-items .div-especial-natal .mini-panetone02,
+    .main-items .div-especial-natal .chocotone03,
+    .main-items .div-especial-natal .chocotone04,
+    .main-items .div-especial-natal .chocotone05,
+    .main-items .div-especial-natal .chocotone06,
+    .main-items .div-outros .bombons01,
+    .main-items .div-outros .bombons02,
+    .main-items .div-outros .chocotones,
+    .main-items .div-outros .brigadeiros {
+        padding: 1rem;
+        width: 10rem;
+        height: 10rem;
+        margin-left: 1rem;
+    }
+}
+
+@media(min-width: 272px) {
+    .header-items .navegacao .img-voltar-container .botao-voltar {
+        margin-left: 1.5rem;
+    }
+}
+
+@media(min-width: 300px) {
+    .main-items .div-copo-felicidade,
+    .main-items .div-festa-na-caixa,
+    .main-items .div-bolos-caseiros,
+    .main-items .div-especial-pascoa,
+    .main-items .div-especial-natal,
+    .main-items .div-outros {
+        margin-left: 3rem;
+    }
+}
+
+@media(min-width: 372px) {
+    .header-items .navegacao .img-voltar-container .botao-voltar {
+        margin-left: 3rem;
+    }
+    .main-items .texto-copo-felicidade,
+    .main-items .texto-festa-na-caixa,
+    .main-items .texto-bolos-caseiros,
+    .main-items .texto-especial-pascoa,
+    .main-items .texto-especial-natal,
+    .main-items .texto-outros {
+        width: 42rem;
+        padding: 1.5rem;
+    }
+    .main-items .div-copo-felicidade .copo-felicidade01,
+    .main-items .div-copo-felicidade .copo-felicidade02,
+    .main-items .div-festa-na-caixa .festa-na-caixa01,
+    .main-items .div-festa-na-caixa .festa-na-caixa02,
+    .main-items .div-bolos-caseiros .bolo-caseiro01,
+    .main-items .div-bolos-caseiros .bolo-caseiro02,
+    .main-items .div-especial-pascoa .ovo-colher01,
+    .main-items .div-especial-pascoa .ovo-colher02,
+    .main-items .div-especial-pascoa .manete,
+    .main-items .div-especial-pascoa .cones,
+    .main-items .div-especial-pascoa .ovo-colher03,
+    .main-items .div-especial-pascoa .ovo-colher04,
+    .main-items .div-especial-pascoa .ovo-colher05,
+    .main-items .div-especial-pascoa .ovo-colher06,
+    .main-items .div-especial-natal .chocotone01,
+    .main-items .div-especial-natal .chocotone02,
+    .main-items .div-especial-natal .mini-panetone01,
+    .main-items .div-especial-natal .mini-panetone02,
+    .main-items .div-especial-natal .chocotone03,
+    .main-items .div-especial-natal .chocotone04,
+    .main-items .div-especial-natal .chocotone05,
+    .main-items .div-especial-natal .chocotone06,
+    .main-items .div-outros .bombons01,
+    .main-items .div-outros .bombons02,
+    .main-items .div-outros .chocotones,
+    .main-items .div-outros .brigadeiros {
+        margin-left: 0;
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media(min-width: 450px) {
+    .main-items .div-copo-felicidade,
+    .main-items .div-festa-na-caixa,
+    .main-items .div-bolos-caseiros,
+    .main-items .div-especial-pascoa,
+    .main-items .div-especial-natal,
+    .main-items .div-outros {
+        margin-left: 5rem;
+    }
+    .header-items .navegacao .img-voltar-container .botao-voltar {
+        margin-left: 6rem;
+    }
+}
+
+@media(min-width: 520px) {
+    .main-items .div-copo-felicidade,
+    .main-items .div-festa-na-caixa,
+    .main-items .div-bolos-caseiros,
+    .main-items .div-especial-pascoa,
+    .main-items .div-especial-natal,
+    .main-items .div-outros {
+        margin-left: 10rem;
+    }
+    .main-items .texto-copo-felicidade,
+    .main-items .texto-festa-na-caixa,
+    .main-items .texto-bolos-caseiros,
+    .main-items .texto-especial-pascoa,
+    .main-items .texto-especial-natal,
+    .main-items .texto-outros {
+        width: 50rem;
+        padding: 1.5rem;
+    }
+    .main-items .div-copo-felicidade .copo-felicidade01,
+    .main-items .div-copo-felicidade .copo-felicidade02,
+    .main-items .div-festa-na-caixa .festa-na-caixa01,
+    .main-items .div-festa-na-caixa .festa-na-caixa02,
+    .main-items .div-bolos-caseiros .bolo-caseiro01,
+    .main-items .div-bolos-caseiros .bolo-caseiro02,
+    .main-items .div-especial-pascoa .ovo-colher01,
+    .main-items .div-especial-pascoa .ovo-colher02,
+    .main-items .div-especial-pascoa .manete,
+    .main-items .div-especial-pascoa .cones,
+    .main-items .div-especial-pascoa .ovo-colher03,
+    .main-items .div-especial-pascoa .ovo-colher04,
+    .main-items .div-especial-pascoa .ovo-colher05,
+    .main-items .div-especial-pascoa .ovo-colher06,
+    .main-items .div-especial-natal .chocotone01,
+    .main-items .div-especial-natal .chocotone02,
+    .main-items .div-especial-natal .mini-panetone01,
+    .main-items .div-especial-natal .mini-panetone02,
+    .main-items .div-especial-natal .chocotone03,
+    .main-items .div-especial-natal .chocotone04,
+    .main-items .div-especial-natal .chocotone05,
+    .main-items .div-especial-natal .chocotone06,
+    .main-items .div-outros .bombons01,
+    .main-items .div-outros .bombons02,
+    .main-items .div-outros .chocotones,
+    .main-items .div-outros .brigadeiros {
+        margin-left: 0;
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media(min-width: 575px) {
+    .header-items .navegacao .img-voltar-container .botao-voltar {
+        width: 10rem;
+    }
+    .header-items .navegacao .img-voltar-container {
+        padding-bottom: 3rem;
+    }
+    .main-items .div-copo-felicidade,
+    .main-items .div-festa-na-caixa,
+    .main-items .div-bolos-caseiros,
+    .main-items .div-especial-pascoa,
+    .main-items .div-especial-natal,
+    .main-items .div-outros {
+        margin-left: 5rem;
+    }
+    .main-items .div-copo-felicidade .copo-felicidade01,
+    .main-items .div-copo-felicidade .copo-felicidade02,
+    .main-items .div-festa-na-caixa .festa-na-caixa01,
+    .main-items .div-festa-na-caixa .festa-na-caixa02,
+    .main-items .div-bolos-caseiros .bolo-caseiro01,
+    .main-items .div-bolos-caseiros .bolo-caseiro02,
+    .main-items .div-especial-pascoa .ovo-colher01,
+    .main-items .div-especial-pascoa .ovo-colher02,
+    .main-items .div-especial-pascoa .manete,
+    .main-items .div-especial-pascoa .cones,
+    .main-items .div-especial-pascoa .ovo-colher03,
+    .main-items .div-especial-pascoa .ovo-colher04,
+    .main-items .div-especial-pascoa .ovo-colher05,
+    .main-items .div-especial-pascoa .ovo-colher06,
+    .main-items .div-especial-natal .chocotone01,
+    .main-items .div-especial-natal .chocotone02,
+    .main-items .div-especial-natal .mini-panetone01,
+    .main-items .div-especial-natal .mini-panetone02,
+    .main-items .div-especial-natal .chocotone03,
+    .main-items .div-especial-natal .chocotone04,
+    .main-items .div-especial-natal .chocotone05,
+    .main-items .div-especial-natal .chocotone06,
+    .main-items .div-outros .bombons01,
+    .main-items .div-outros .bombons02,
+    .main-items .div-outros .chocotones,
+    .main-items .div-outros .brigadeiros {
+        width: 25rem;
+        height: 25rem;
+    }
+    .footer-items .footer-contato .texto-info,
+    .footer-items .contato-inferior .link-contato-inferior {
+        font-size: 2.5rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .header-items .navegacao .img-voltar-container .botao-voltar {
+        margin-left: 10rem;
+    }
+    .main-items .div-copo-felicidade,
+    .main-items .div-festa-na-caixa,
+    .main-items .div-bolos-caseiros,
+    .main-items .div-especial-pascoa,
+    .main-items .div-especial-natal,
+    .main-items .div-outros {
+        margin-left: 15rem;
+    }
+    .main-items .texto-copo-felicidade,
+    .main-items .texto-festa-na-caixa,
+    .main-items .texto-bolos-caseiros,
+    .main-items .texto-especial-pascoa,
+    .main-items .texto-especial-natal,
+    .main-items .texto-outros {
+        width: 50rem;
+        padding: 1.5rem;
+        margin-left: 25rem;
+    }
+}
+
+@media(min-width: 850px) {
+    .header-items .navegacao .img-voltar-container .botao-voltar {
+        margin-left: 15rem;
+    }
+    .main-items .div-copo-felicidade,
+    .main-items .div-festa-na-caixa,
+    .main-items .div-bolos-caseiros,
+    .main-items .div-especial-pascoa,
+    .main-items .div-especial-natal,
+    .main-items .div-outros {
+        margin-left: 8rem;
+    }
+    .main-items .texto-copo-felicidade,
+    .main-items .texto-festa-na-caixa,
+    .main-items .texto-bolos-caseiros,
+    .main-items .texto-especial-pascoa,
+    .main-items .texto-especial-natal,
+    .main-items .texto-outros {
+        font-size: 2.5rem;
+    }
+    .main-items .div-copo-felicidade .copo-felicidade01,
+    .main-items .div-copo-felicidade .copo-felicidade02,
+    .main-items .div-festa-na-caixa .festa-na-caixa01,
+    .main-items .div-festa-na-caixa .festa-na-caixa02,
+    .main-items .div-bolos-caseiros .bolo-caseiro01,
+    .main-items .div-bolos-caseiros .bolo-caseiro02,
+    .main-items .div-especial-pascoa .ovo-colher01,
+    .main-items .div-especial-pascoa .ovo-colher02,
+    .main-items .div-especial-pascoa .manete,
+    .main-items .div-especial-pascoa .cones,
+    .main-items .div-especial-pascoa .ovo-colher03,
+    .main-items .div-especial-pascoa .ovo-colher04,
+    .main-items .div-especial-pascoa .ovo-colher05,
+    .main-items .div-especial-pascoa .ovo-colher06,
+    .main-items .div-especial-natal .chocotone01,
+    .main-items .div-especial-natal .chocotone02,
+    .main-items .div-especial-natal .mini-panetone01,
+    .main-items .div-especial-natal .mini-panetone02,
+    .main-items .div-especial-natal .chocotone03,
+    .main-items .div-especial-natal .chocotone04,
+    .main-items .div-especial-natal .chocotone05,
+    .main-items .div-especial-natal .chocotone06,
+    .main-items .div-outros .bombons01,
+    .main-items .div-outros .bombons02,
+    .main-items .div-outros .chocotones,
+    .main-items .div-outros .brigadeiros {
+        width: 40rem;
+        height: 40rem;
+    }
+}
+
+@media(min-width: 992px) {
+    .main-items .texto-copo-felicidade,
+    .main-items .texto-festa-na-caixa,
+    .main-items .texto-bolos-caseiros,
+    .main-items .texto-especial-pascoa,
+    .main-items .texto-especial-natal,
+    .main-items .texto-outros {
+        margin-left: 40rem;
+    }
+    .main-items .div-copo-felicidade .copo-felicidade01,
+    .main-items .div-copo-felicidade .copo-felicidade02,
+    .main-items .div-festa-na-caixa .festa-na-caixa01,
+    .main-items .div-festa-na-caixa .festa-na-caixa02,
+    .main-items .div-bolos-caseiros .bolo-caseiro01,
+    .main-items .div-bolos-caseiros .bolo-caseiro02,
+    .main-items .div-especial-pascoa .ovo-colher01,
+    .main-items .div-especial-pascoa .ovo-colher02,
+    .main-items .div-especial-pascoa .manete,
+    .main-items .div-especial-pascoa .cones,
+    .main-items .div-especial-pascoa .ovo-colher03,
+    .main-items .div-especial-pascoa .ovo-colher04,
+    .main-items .div-especial-pascoa .ovo-colher05,
+    .main-items .div-especial-pascoa .ovo-colher06,
+    .main-items .div-especial-natal .chocotone01,
+    .main-items .div-especial-natal .chocotone02,
+    .main-items .div-especial-natal .mini-panetone01,
+    .main-items .div-especial-natal .mini-panetone02,
+    .main-items .div-especial-natal .chocotone03,
+    .main-items .div-especial-natal .chocotone04,
+    .main-items .div-especial-natal .chocotone05,
+    .main-items .div-especial-natal .chocotone06,
+    .main-items .div-outros .bombons01,
+    .main-items .div-outros .bombons02,
+    .main-items .div-outros .chocotones,
+    .main-items .div-outros .brigadeiros {
+        width: 45rem;
+        height: 45rem;
+    }
+}
+
+@media(min-width: 1200px) {
+    .main-items .texto-copo-felicidade,
+    .main-items .texto-festa-na-caixa,
+    .main-items .texto-bolos-caseiros,
+    .main-items .texto-especial-pascoa,
+    .main-items .texto-especial-natal,
+    .main-items .texto-outros {
+        width: 80rem;
+        margin-left: 30rem;
+    }
+    .main-items .div-copo-felicidade .copo-felicidade01,
+    .main-items .div-copo-felicidade .copo-felicidade02,
+    .main-items .div-festa-na-caixa .festa-na-caixa01,
+    .main-items .div-festa-na-caixa .festa-na-caixa02,
+    .main-items .div-bolos-caseiros .bolo-caseiro01,
+    .main-items .div-bolos-caseiros .bolo-caseiro02,
+    .main-items .div-especial-pascoa .ovo-colher01,
+    .main-items .div-especial-pascoa .ovo-colher02,
+    .main-items .div-especial-pascoa .manete,
+    .main-items .div-especial-pascoa .cones,
+    .main-items .div-especial-pascoa .ovo-colher03,
+    .main-items .div-especial-pascoa .ovo-colher04,
+    .main-items .div-especial-pascoa .ovo-colher05,
+    .main-items .div-especial-pascoa .ovo-colher06,
+    .main-items .div-especial-natal .chocotone01,
+    .main-items .div-especial-natal .chocotone02,
+    .main-items .div-especial-natal .mini-panetone01,
+    .main-items .div-especial-natal .mini-panetone02,
+    .main-items .div-especial-natal .chocotone03,
+    .main-items .div-especial-natal .chocotone04,
+    .main-items .div-especial-natal .chocotone05,
+    .main-items .div-especial-natal .chocotone06,
+    .main-items .div-outros .bombons01,
+    .main-items .div-outros .bombons02,
+    .main-items .div-outros .chocotones,
+    .main-items .div-outros .brigadeiros {
+        width: 60rem;
+        height: 60rem;
+    }
+}
